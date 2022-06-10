@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Canvas from './components/Canvas';
-import Centered_container from './components/Centered_container';
+// import Centered_container from './components/Centered_container';
 
 function App() {
   return (
