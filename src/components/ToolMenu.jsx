@@ -4,6 +4,7 @@ import ToolButton from "./ToolButton";
 import ThicknessSlider from "./ThicknessSlider";
 import Eracer from "../assets/eracer.svg";
 import Pencil from "../assets/pencil.svg";
+import ColorPicker from "./ColorPicker";
 
 const ToolMenu = () => {
   return (
@@ -11,6 +12,7 @@ const ToolMenu = () => {
       <ToolButton icon={Eracer} alt="eracer" size="3rem" />
       <ToolButton icon={Pencil} alt="pencil" size="3rem" />
       <ThicknessSlider />
+      <ColorPicker />
     </div>
   );
 };

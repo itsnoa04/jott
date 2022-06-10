@@ -1,0 +1,31 @@
+.color input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 4rem;
+  width: 4rem;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
+.frame {
+  position: absolute;
+  height: 4.5rem;
+  width: 4.5rem;
+  transform: translate(17%, 15%);
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+  border-radius: 0.75rem;
+}
+
+.color {
+  position: relative;
+  padding: 1rem;
+  background-color: hsla(0, 0%, 18%, 1);
+  border-radius: 1rem;
+}
