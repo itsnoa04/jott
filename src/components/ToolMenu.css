@@ -1,0 +1,7 @@
+.tool-menu {
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  display: flex;
+  gap: 1rem;
+}

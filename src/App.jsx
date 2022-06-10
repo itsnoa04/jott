@@ -1,11 +1,10 @@
 import React from "react";
 import "./App.css";
 import Canvas from "./components/Canvas";
-import ToolButton from "./components/ToolButton";
-import Eracer from "./assets/eracer.svg";
-import Pencil from "./assets/pencil.svg";
 import { ToolProvider } from "./context/ToolContext";
 import { StyleProvider } from "./context/StyleContext";
+import ThicknessSlider from "./components/ThicknessSlider";
+import ToolMenu from "./components/ToolMenu";
 
 function App() {
   return (
@@ -21,8 +20,7 @@ function App() {
       <ToolProvider>
         <StyleProvider>
           <Canvas />
-          <ToolButton icon={Eracer} alt="eracer" size="3rem" />
-          <ToolButton icon={Pencil} alt="pencil" size="3rem" />
+          <ToolMenu />
         </StyleProvider>
       </ToolProvider>
     </div>
