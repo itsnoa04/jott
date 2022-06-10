@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
+import Canvas from './components/canvas/Canvas';
 
 function App() {
   return (
-    <p>
-      Cleanedup React App
-    </p>
+    <Canvas />
   );
 }
 
