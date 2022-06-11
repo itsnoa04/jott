@@ -3,7 +3,7 @@ import "./App.css";
 import Canvas from "./components/Canvas";
 import { ToolProvider } from "./context/ToolContext";
 import { StyleProvider } from "./context/StyleContext";
-import ToolMenu from "./components/ToolMenu";
+// import ToolMenu from "./components/ToolMenu";
 
 function App() {
   return (
