@@ -3,7 +3,6 @@ import "./App.css";
 import Canvas from "./components/Canvas";
 import { ToolProvider } from "./context/ToolContext";
 import { StyleProvider } from "./context/StyleContext";
-import ThicknessSlider from "./components/ThicknessSlider";
 import ToolMenu from "./components/ToolMenu";
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
       <ToolProvider>
         <StyleProvider>
           <Canvas />
-          <ToolMenu />
+          {/* <ToolMenu /> */}
         </StyleProvider>
       </ToolProvider>
     </div>

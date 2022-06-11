@@ -1,25 +1,24 @@
-import React, { useContext, useEffect } from "react";
+import React, { useCallback, useContext, useEffect, useMemo } from "react";
 import StyleContext from "../context/StyleContext";
 
 import "./ThicknessSlider.css";
 
 const ThicknessSlider = () => {
   const { thickness, setThickness, color } = useContext(StyleContext);
-  const [percentage, setPercentage] = React.useState(0);
 
-  const getPercentage = () => {
+  const getPercentage = useCallback(() => {
     return (thickness / 60) * 100;
-  };
+  }, [thickness]);
 
-  useEffect(() => {
+  const percentage = useMemo(() => {
     if (thickness < 5) {
       setThickness(0);
     }
     if (thickness > 60) {
       setThickness(60);
     }
-    setPercentage(getPercentage());
-  }, [thickness]);
+    return getPercentage();
+  }, [thickness, setThickness, getPercentage]);
 
   useEffect(() => {
     document.documentElement.style.setProperty("--color", color);

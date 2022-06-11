@@ -6,7 +6,6 @@ import ToolContext from "../context/ToolContext";
 const ToolButton = ({ icon, alt, size }) => {
   const { tool, setTool } = useContext(ToolContext);
   const { color } = useContext(StyleContext);
-  console.log(color);
 
   const getStroke = () => {
     if (tool === alt) {
